@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tera Motors</title>
+        <link rel="stylesheet" href="style/homepage.css">
+        <link rel="stylesheet" href="style/header-footer-uniform.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+        <script defer type="text/javascript" src="script\LocationOfBranches.js"></script>
+        <script defer type="text/javascript" src="script\HomepageFunctions.js"></script>
+    </head>
+    <body>
+
+        
+        <!--header-->
+        <header>
+            <a href="#">
+            <div class="logo-container">
+                    <img class="website-logo" src="images/TeraMotorsLogo.png">
+                    <h1>Tera<br>Motors</h1>
+                
+                
+            </div>
+            </a>
+           <div>
+                <ul class="navbar-container" id="navbar-container">
+                <a class="navbar-item active" id="navbar-item" href="#">Home</a>
+                <a class="navbar-item" id="navbar-item" href="products_page.html">Products</a>
+                <a class="navbar-item" id="navbar-item" href="#">Services</a>
+                <a class="navbar-item" id="navbar-item" href="#">About</a>
+                <a href="#" class="navbar-item"><img class="icon" src="images\icons\shopping-cart-svgrepo-com.svg">
+                </a>
+                </ul>
+               <div id="menu-button"><img src="images/icons/hamburger-svgrepo-com.svg"></div> 
+           </div>
+        </header>
+
+        <!--main body-->
+        <main>
+            <div class="overview-section">
+               <div class="shadowing">
+                <div class="overview-logo">  
+                    <img class="big-logo" src="images/TeraMotorsLogo.png">
+                   <h1>Tera Motors</h1>
+               </div>
+                  <div class="overview-text">
+                   <h2>Every need for your vehicle all in one place</h2>
+                   <p>We have a wide range of services regarding various types of cars.</p>
+                  </div>
+                   
+
+               </div>
+            </div>
+
+           <!--sections' navigation section-->
+
+            <h1 class="page-section-title">Sections</h1>
+            <div class="sections-container">
+                <a href="#">
+                    <div class="section-button">
+                        <img src="images/icons/shopping-cart-svgrepo-com.svg">
+                        <h3>Shop Online</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-button">
+                        <img src="images/icons/schedule-svgrepo-com.svg">
+                        <h3>Book a Service</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-button">
+                        <img src="images/icons/location-svgrepo-com.svg">
+                        <h3>Find a Branch</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-button">
+                        <img src="images/icons/headphones-alt-2-svgrepo-com.svg">
+                        <h3>Contact Us</h3>
+                    </div>
+                </a>
+            </div>
+          
+            <!--What's new section-->
+
+            <h1 class="page-section-title">What's New</h1>
+            <div class="whats-new-section">
+                <a href="#" class="selection-move">
+                    <div class="media-news"> 
+                    <div class="shadowing-news">
+                        
+                            <h1>Media</h1>
+                    </div>
+                </div>
+                </a>
+                <a href="#" class="selection-move"> 
+                <div class="offers-news"> 
+                    <div class="shadowing-news">
+                         
+                            <h1>Offers</h1>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <!--Major Customers section-->
+
+            
+            <div class="major-customers-section"> 
+                <h1 class="page-section-title">Special Customers</h1>
+                <ul class="major-customers-container">
+                    <div class="major-customers-item">
+                        <img src="images/usa-embassy-logo.png">
+                        <h4>United States Embassy</h4>
+                    </div>
+                  
+                </ul>
+            </div>
+
+            <!--locations-section-->
+            <h1 class="page-section-title">Where to Find us</h1>
+            <div class="location-section">
+                <div id="map"></div>
+                <div class="list-of-locations"> </div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <img src="images/TeraMotorsLogo.png">
+                <h2>Tera<br> Motors</h2>
+            </div>
+
+            <div>
+                <h4>Navigation</h4>
+                <a>Home</a>
+                <a>Products</a>
+                <a>Services</a>
+                <a>Branches</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a>Terms & Conditions</a>
+                <a>Privacy</a>
+                <a>Warranty</a>
+            </div>
+
+
+            <div>
+                <h4>Company</h4>
+                <a>About</a>
+                <a>Contact Us</a>
+                <a>FAQ</a>
+            </div>
+
+            <div>
+                <h4>Social</h4>
+                <a class="social-icon"><img src="images/icons/instagram-svgrepo-com.svg"></a>
+                <a class="social-icon"><img src="images/icons/facebook-svgrepo-com.svg"></a>
+            </div>
+
+
+        </footer>
+
+    </body>
+</html>
