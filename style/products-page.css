@@ -1,0 +1,9 @@
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(4,20vw);
+    grid-auto-rows: auto;
+    gap: 2vh;
+    justify-content: center;
+    align-content: space-around;
+
+}

@@ -1,8 +1,4 @@
 
-
-
-
-
 let branches = [];
 branches.push(new Branch('Mikocheni B',[-6.7500168405304395, 39.24161933667397],'Mwai Kibaki Road','https://maps.app.goo.gl/28n8jNNZcfpdVNSDA'));
 branches.push(new Branch('Kinondoni',[-6.75324587783343, 39.2241220102132],'Kinondoni Street','https://maps.app.goo.gl/uT2dvDc4EwE9h1Zh8'));
