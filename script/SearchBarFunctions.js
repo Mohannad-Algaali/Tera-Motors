@@ -7,7 +7,7 @@ searchBar.addEventListener("keydown",checkInput);
 
 
 function checkInput(){
-
+    
 }
 
 // resetBtn.addEventListener("click",reset);
