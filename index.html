@@ -3,7 +3,7 @@
     <head>
         <title>Tera Motors</title>
         <link rel="stylesheet" href="style/homepage.css">
-        <link rel="stylesheet" href="style/header-footer-uniform.css"
+        <link rel="stylesheet" href="style/header.css"
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,162 +13,40 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
-        <script defer type="text/javascript" src="script\LocationOfBranches.js"></script>
+
         <script defer type="text/javascript" src="script\HomepageFunctions.js"></script>
     </head>
     <body>
 
-        
-        <!--header-->
-        <header>
-            <a href="#">
-            <div class="logo-container">
-                    <img class="website-logo" src="images/TeraMotorsLogo.png">
-                    <h1>Tera<br>Motors</h1>
-                
-                
-            </div>
-            </a>
-           <div>
-                <ul class="navbar-container" id="navbar-container">
-                <a class="navbar-item active" id="navbar-item" href="#">Home</a>
-                <a class="navbar-item" id="navbar-item" href="products_page.html">Products</a>
-                <a class="navbar-item" id="navbar-item" href="#">Services</a>
-                <a class="navbar-item" id="navbar-item" href="#">About</a>
-                <a href="#" class="navbar-item"><img class="icon" src="images\icons\shopping-cart-svgrepo-com.svg">
-                </a>
-                </ul>
-               <div id="menu-button"><img src="images/icons/hamburger-svgrepo-com.svg"></div> 
-           </div>
-        </header>
+    <header>
+        <div class="title">
+            <img src="images/TeraMotorsLogo.png" >
+            <h1>Tera Motors</h1>
+        </div>
+        <svg id="menu-btn" width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#0a0a0a" stroke="#0a0a0a">
 
-        <!--main body-->
-        <main>
-            <div class="overview-section">
-               <div class="shadowing">
-                <div class="overview-logo">  
-                    <img class="big-logo" src="images/TeraMotorsLogo.png">
-                   <h1>Tera Motors</h1>
-               </div>
-                  <div class="overview-text">
-                   <h2>Every need for your vehicle all in one place</h2>
-                   <p>We have a wide range of services regarding various types of cars.</p>
-                  </div>
-                   
-
-               </div>
-            </div>
-
-           <!--sections' navigation section-->
-
-            <h1 class="page-section-title">Sections</h1>
-            <div class="sections-container">
-                <a href="#">
-                    <div class="section-button">
-                        <img src="images/icons/shopping-cart-svgrepo-com.svg">
-                        <h3>Shop Online</h3>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="section-button">
-                        <img src="images/icons/schedule-svgrepo-com.svg">
-                        <h3>Book a Service</h3>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="section-button">
-                        <img src="images/icons/location-svgrepo-com.svg">
-                        <h3>Find a Branch</h3>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="section-button">
-                        <img src="images/icons/headphones-alt-2-svgrepo-com.svg">
-                        <h3>Contact Us</h3>
-                    </div>
-                </a>
-            </div>
-          
-            <!--What's new section-->
-
-            <h1 class="page-section-title">What's New</h1>
-            <div class="whats-new-section">
-                <a href="#" class="selection-move">
-                    <div class="media-news"> 
-                    <div class="shadowing-news">
-                        
-                            <h1>Media</h1>
-                    </div>
-                </div>
-                </a>
-                <a href="#" class="selection-move"> 
-                <div class="offers-news"> 
-                    <div class="shadowing-news">
-                         
-                            <h1>Offers</h1>
-                    </div>
-                </div>
-                </a>
-            </div>
-            <!--Major Customers section-->
-
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
             
-            <div class="major-customers-section"> 
-                <h1 class="page-section-title">Special Customers</h1>
-                <ul class="major-customers-container">
-                    <div class="major-customers-item">
-                        <img src="images/usa-embassy-logo.png">
-                        <h4>United States Embassy</h4>
-                    </div>
-                  
-                </ul>
-            </div>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <title>hamburger</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-212.000000, -888.000000)" fill="#0a0a0a"> <path d="M230,904 L214,904 C212.896,904 212,904.896 212,906 C212,907.104 212.896,908 214,908 L230,908 C231.104,908 232,907.104 232,906 C232,904.896 231.104,904 230,904 L230,904 Z M230,896 L214,896 C212.896,896 212,896.896 212,898 C212,899.104 212.896,900 214,900 L230,900 C231.104,900 232,899.104 232,898 C232,896.896 231.104,896 230,896 L230,896 Z M214,892 L230,892 C231.104,892 232,891.104 232,890 C232,888.896 231.104,888 230,888 L214,888 C212.896,888 212,888.896 212,890 C212,891.104 212.896,892 214,892 L214,892 Z" id="hamburger" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+            
+            </svg>
+        <!--<img src="images/icons/hamburger-svgrepo-com.svg" id="menu-btn">
+        -->
+    </header>
 
-            <!--locations-section-->
-            <h1 class="page-section-title">Where to Find us</h1>
-            <div class="location-section">
-                <div id="map"></div>
-                <div class="list-of-locations"> </div>
+    <main>
+        <div class="schedule-appointment-section">
+            <div>
+                <h1>Have a problem with your car?</h2>
+                <p>Schedule an appointment now to make sure your car will be better cared about.</p>
+                <button type="button" class="call-to-action-btn">Schedule an appoinment</button>
                 
-            </div>
-        </main>
-
-        <footer>
-            <div>
-                <img src="images/TeraMotorsLogo.png">
-                <h2>Tera<br> Motors</h2>
-            </div>
-
-            <div>
-                <h4>Navigation</h4>
-                <a>Home</a>
-                <a>Products</a>
-                <a>Services</a>
-                <a>Branches</a>
-            </div>
-            <div>
-                <h4>Legal</h4>
-                <a>Terms & Conditions</a>
-                <a>Privacy</a>
-                <a>Warranty</a>
-            </div>
-
-
-            <div>
-                <h4>Company</h4>
-                <a>About</a>
-                <a>Contact Us</a>
-                <a>FAQ</a>
-            </div>
-
-            <div>
-                <h4>Social</h4>
-                <a class="social-icon"><img src="images/icons/instagram-svgrepo-com.svg"></a>
-                <a class="social-icon"><img src="images/icons/facebook-svgrepo-com.svg"></a>
-            </div>
-
-
-        </footer>
+                </div>
+            <img src="images/car-fix-vector.jpg" class="vector-img">
+        </div>
+    </main>
 
     </body>
 </html>
