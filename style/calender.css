@@ -1,0 +1,22 @@
+@import url(header.css);
+
+.main-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .heading{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+
+.days-container ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    list-style: none;
+}
