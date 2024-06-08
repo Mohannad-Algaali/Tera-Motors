@@ -1,0 +1,33 @@
+@import url(header.css);
+
+body{
+    display: flex;
+    width: 100svw;
+    background-color: var(--accent);
+    height: 100svh;
+    
+}
+.date-container{
+    background-color: var(--dominant);
+    height: 50svh;
+    width:40svw;
+    margin: 4% auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    align-content: center;
+    position: relative;
+}
+.next1-button{
+    background-color: var(--accent);
+    color: var(--dominant);
+    margin: 8% auto;
+    height: 8vh;
+    width: 20vw;
+    border-radius: 40px;
+    border-width: 0;
+    font-size: 20px;
+
+    
+}
