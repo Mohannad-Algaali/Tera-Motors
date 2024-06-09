@@ -1,33 +1,89 @@
-@import url(header.css);
+@import url('header.css');
+
+:root{
+    --width:40vw;
+}
 
 body{
-    display: flex;
-    width: 100svw;
-    background-color: var(--accent);
-    height: 100svh;
+   background-color: var(--dominant);
+   margin: 0;
     
 }
-.date-container{
-    background-color: var(--dominant);
-    height: 50svh;
-    width:40svw;
-    margin: 4% auto;
-    border-radius: 20px;
+.main{
+    background-color: white;
+    margin: 8% auto;
+    aspect-ratio: 4/3;
+    width: var(--width);
     display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    align-content: center;
+    overflow:hidden;
+    box-shadow: 0px 10px 10px 1px rgba(0,0,0,0.2);
+    padding: 1rem 3rem;
     position: relative;
+    align-content: center;
+
 }
-.next1-button{
+.form{
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    aspect-ratio: 4/3;
+    height: 100%;
+    width:100%;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.button-container{
+    display: flex;
+    width: var(--width);
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+    
+    
+}
+.next-btn, .back-btn{
+    width: 100%;
     background-color: var(--accent);
     color: var(--dominant);
-    margin: 8% auto;
-    height: 8vh;
-    width: 20vw;
-    border-radius: 40px;
     border-width: 0;
-    font-size: 20px;
-
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    height: 10vh;
+    font-size: 1.5rem;
     
+    
+}
+
+.pending{
+    left:100vw;
+}
+.done{
+    left:-100vh;
+}
+
+input[type="date"]{
+    width: 100%;
+    
+}
+.form-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.date-input{
+    aspect-ratio: 9/1;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding-inline: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    caret-color: var(--accent);
 }

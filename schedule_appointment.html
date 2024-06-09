@@ -2,79 +2,157 @@
 <head>
     <title>Schedule an Appointment</title>
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/calender.css">
+   
     <link rel="stylesheet" href="style/scheduling.css">
+    <script src='script/FormFunctions.js' defer type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     
-    <script defer type="text/javascript" src="script/Calender.js"></script>
+    
+
+ 
+  
 </head>
 
 
 <html>
     <body>
 
-       <div class="date-container">
+      <div class="main">
+     <!--<div class="progress">
+          <div class="checkpoint">1</div>
+          <div class="checkpoint">2</div>
+          <div class="checkpoint">3</div>
+          <div class="checkpoint">4</div>
+          <div class="checkpoint">5</div>
+        </div> -->
 
-        <h1>Pick a date</h1>
-        <main>
+        <div class="date-form step1 form">
+          <div class="form-container">
+            <h1>Select a Date</h1>
+          <input type="date" placeholder="Select a Date" class="date-input">
           
-            <div class="datepicker-container">
-                <input type="text" class="date-input" placeholder="Select date" />
+          </div>
+          <div class="button-container">
+            <button type="button" class="next-btn">Next</button>
+          </div>
+          </div>
           
-                <div class="datepicker" hidden>
-                  <!-- .datepicker-header -->
-                  <div class="datepicker-header">
-                    <button class="prev">Prev</button>
-          
-                    <div>
-                      <select class="month-input">
-                        <option>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                        <option>July</option>
-                        <option>August</option>
-                        <option>September</option>
-                        <option>October</option>
-                        <option>November</option>
-                        <option>December</option>
-                      </select>
-                      <input type="number" class="year-input" />
-                    </div>
-          
-                    <button class="next">Next</button>
-                  </div>
-                  <!-- /.datepicker-header -->
-          
-                  <!-- .days -->
-                  <div class="days">
-                    <span>Sun</span>
-                    <span>Mon</span>
-                    <span>Tue</span>
-                    <span>Wed</span>
-                    <span>Thu</span>
-                    <span>Fri</span>
-                    <span>Sat</span>
-                  </div>
-                  <!-- /.days -->
-          
-                  <!-- .dates -->
-                  <div class="dates"></div>
-                  <!-- /.dates -->
-          
-                  <!-- .datepicker-footer -->
-                  <div class="datepicker-footer">
-                    <button class="cancel">Cancel</button>
-                    <button class="apply">Apply</button>
-                  </div>
-                  <!-- /.datepicker-footer -->
-                </div>
+          <div class="location-form step2 form" >
+              <div class="form-container">
+                <h1>Select a Location</h1>
+                <div class="map"></div>
+                <ul class="locations">
+                  <li>Mikocheni B</li>
+                  <li>Kinondoni</li>
+                </ul>
               </div>
-        </main>
-        <button class="next1-button">Next</button>
-       </div>
+              <div class="button-container">
+                <button type="button" class="back-btn">Back</button>
+                <button type="button" class="next-btn">Next</button>
+              </div>
+              </div>
+              
+              <div class="vehicle-form step3 form" >
+                <div class="form-container">
+                  <h1>Select your vehicle</h1>
+                  <label for="car-manufacturer">Car Manufacturer</label>
+                  <select class="car-manufacturer" aria-placeholder="Select Your Car Manufacturer">
+                    <option>GMC</option>
+                    <option>Chevrolet</option>
+                    <option>Mercedes</option>
+                    <option>Audi</option>
+                    <option>Ferari</option>
+                    <option>Other</option>
+            </select>
+            <label for="car-make">Car Make</label>
+            <select class="car-make">
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+              <option>2008</option>
+              <option>2007</option>
+              <option>2006</option>
+              <option>2005</option>
+              <option>2004</option>
+              
+            </select>
+            <label for="car-model">Car Model</label>
+            <select class="car-model">
+  
+              <option>Some Car</option>
+              <option>Some Car</option>
+              <option>Some Car</option>
+              <option>Some Car</option>
+              <option>Some Car</option>
+            </select>
+                </div>
+                <div class="button-container">
+                  <button type="button" class="back-btn">Back</button>
+                  <button type="button" class="next-btn">Next</button>
+                </div>
+             </div>
+        
+        <div class="number-form step4 form" >
+          <div class="form-container">
+            <h1>Enter Your Phone Number</h1>
+          <label for="number-input"></label>
+          <input type="number" class="number-input" placeholder="+255 555 123456" inputmode="numeric">
+          </div>
+          <div class="button-container">
+            <button type="button" class="back-btn">Back</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </div>
+        
+        <div class="number-confirmation-form step5 form" >
+          <div class="form-container">
+            <h1>Enter The Code You recieved In A Message</h1>
+            <label for="number-input"></label>
+            <input type="number" class="identity-check-input" placeholder="123456" inputmode="numeric">
+          </div>
+          <div class="button-container">
+            <button type="button" class="back-btn">Back</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </div>
+        
+        <div class="submit-form step6 form">
+          <div class="form-container">
+
+          </div>
+          <div class="button-container">
+            <button type="button" class="back-btn">Back</button>
+            <button type="button" class="next-btn">Finish</button>
+          </div>
+        </div>
+
+      </div>
 
       
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+      <script>
+         flatpickr(".date-input",{
+          
+    minDate:"today",
+    maxDate: new Date().fp_incr(60),
+    dateFormat: "Y-m-d",
+
+         });
+      </script>
     </body>
 </html>
