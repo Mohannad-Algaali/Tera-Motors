@@ -10,12 +10,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-let marker = null;
-addMarker(branches[0].coords,marker,map);
 
-
-
-function addMarker(coordinates, marker,map){
+marker = null;
+addMarker(marker);
+function addMarker(marker){
     
     if(marker){
         map.removeLayer(marker);
@@ -39,6 +37,13 @@ function addMarker(coordinates, marker,map){
 
 function setCurrentLocation(map,index,branches){
     map.setView(branches[index].coords,13);
+    for(let i=0;i<branches.length;i++){
+        if(i===index){
+            branches[i].selected = true;
+        }else{
+            branches[i].selected= false;
+        }
+    }
 
 }
 
@@ -48,20 +53,23 @@ function createLocationItem(branches){
     for(let b =0;b<branches.length;b++){
         const LOCATION_CONTAINER = document.createElement('div');
         const LOCATION_NAME = document.createElement('h3');
-        const LOCATION_ADDRESS = document.createElement('p');
-        const DirectionsButton = document.createElement('a');
+        
+        if(branches[b].selected){
+            LOCATION_CONTAINER.classList.add('selected-location');
+        }
     
-        const LOCATION_LIST = document.getElementsByClassName('list-of-locations');
-    
+        const LOCATION_LIST = document.querySelector('.locations');
+        
+        
         LOCATION_CONTAINER.classList.add('location-item');
         LOCATION_NAME.textContent = branches[b].name
-        LOCATION_ADDRESS.textContent = branches[b].address;
-        DirectionsButton.setAttribute('href',branches[b].url);
+        
+        
         LOCATION_CONTAINER.appendChild(LOCATION_NAME);
-        LOCATION_CONTAINER.appendChild(LOCATION_ADDRESS);
-        LOCATION_CONTAINER.appendChild(DirectionsButton);
+        
+        
     
-        LOCATION_LIST[0].appendChild(LOCATION_CONTAINER);
+        LOCATION_LIST.appendChild(LOCATION_CONTAINER);
         
         LOCATION_CONTAINER.addEventListener('click',function(){ setCurrentLocation(map,b,branches)});
         
@@ -70,12 +78,11 @@ function createLocationItem(branches){
     
 }    
 
-function Branch(name,coords,address, url){
+function Branch(name,coords, url){
     this.name = name;
     this.coords = coords;
-    this.address = address;
-    this.show = false;
     this.url = url;
+    this.selected = false;
 }    
 
 

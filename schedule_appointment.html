@@ -5,10 +5,16 @@
    
     <link rel="stylesheet" href="style/scheduling.css">
     <script src='script/FormFunctions.js' defer type="text/javascript"></script>
+    <script src='script/LocationOfBranches.js' defer type="text/javascript"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 
  
   
@@ -41,11 +47,10 @@
           <div class="location-form step2 form" >
               <div class="form-container">
                 <h1>Select a Location</h1>
-                <div class="map"></div>
-                <ul class="locations">
-                  <li>Mikocheni B</li>
-                  <li>Kinondoni</li>
-                </ul>
+                <div class="map-container">
+                  <div class="map" id="map"></div>
+                 <ul class="locations"></ul>
+                </div>
               </div>
               <div class="button-container">
                 <button type="button" class="back-btn">Back</button>

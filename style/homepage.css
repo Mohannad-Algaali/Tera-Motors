@@ -15,10 +15,10 @@
 .vector-img{
     height: var(--web-height);
     width: fit-content;
-    border-radius: 100%;
+    
     position: relative;
     top: 40px;
-    right: 100px;
+    
 }
 
 .schedule-appointment-section div{
@@ -47,6 +47,7 @@
     margin-block: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
     
 
     

@@ -78,6 +78,7 @@ input[type="date"]{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    height: 100%;
 }
 .date-input{
     aspect-ratio: 9/1;
@@ -86,4 +87,43 @@ input[type="date"]{
     padding-inline: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     caret-color: var(--accent);
+}
+
+
+.map-container{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 1fr;
+   height: 100%;
+   margin-block: 1rem;
+}
+.map{
+    height: 100%;
+    background-color: var(--complementary);
+}
+.locations{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.locations div h3{
+    position: relative;
+}
+.locations div h3::after{
+    content: '';
+    width:120%;
+    height: 2px;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: black;
+    opacity: 0.2;
+    border-radius: 100px;
+}
+.selected-location{
+    border-width: 3px ;
+    border-color: var(--complementary);
+    border-radius: 20px;
+    filter: brightness(80%);
 }
